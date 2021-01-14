@@ -12,7 +12,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
   align-items: center;
 }
 
@@ -49,6 +48,12 @@
   align-items: center;
   justify-content: center;
   margin-top: auto;
+}
+
+@media (max-width: 1324px) {
+  .app {
+    padding: 50px 250px;
+  }
 }
 
 @media (max-width: 1024px) {
