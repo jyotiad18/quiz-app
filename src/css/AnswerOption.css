@@ -1,0 +1,45 @@
+.answerOption {
+  display: flex;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 2px solid rgba(96, 102, 208, 0.7);
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.answerOption__incorrect {
+  background: red !important;
+}
+
+.answerOption__correct {
+  background: green !important;
+}
+
+.answerOption__correct > h1,
+.answerOption__incorrect > h1 {
+  color: white !important;
+}
+
+.answerOption > h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(96, 102, 208, 0.8);
+}
+
+.answerOption:hover {
+  background: #f9a826;
+}
+
+.answerOption:hover > h1 {
+  color: white;
+}
+
+.answerOption > i {
+  color: white;
+}
