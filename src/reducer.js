@@ -54,12 +54,15 @@ export const reducer =  (state, action) => {
 			while (j < 10) {
 				let randomIdx = Math.floor(Math.random() * quizList.length);
 				const question = quizList[randomIdx];
+				const answers = question.answers;
 				let i = 0;
 				while (i < 3) {
 					const ca = quizList[randomIdx + (i + 1)];
-					question.answers.push(ca.correctAnswer);
+					answers.push(ca.correctAnswer);
 					i++;
 				}
+				answers.sort(() => .5 - Math.random());
+				question.answers = answers;
 				questions.push(question);
 				j++;
 			}

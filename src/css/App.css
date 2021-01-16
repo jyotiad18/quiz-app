@@ -6,13 +6,12 @@
   padding: 50px 418px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 
   background-image: url('../images/background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
 }
 
 .app__header {
@@ -47,6 +46,7 @@
   color: #a9a9a9;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
   margin-top: auto;
 }
 
@@ -63,38 +63,16 @@
 }
 @media (max-width: 635px) {
   .app {
-    padding: 50px 20px;
-    padding-bottom: 50px;
+    padding: 50px 10px;
+    padding-bottom: 20px !important;
   }
 
   .header__title {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .app__header {
-    margin-bottom: -50px;
-  }
-  .app__footer {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .app {
-    padding: 100px 20px;
-    padding-bottom: 50px;
-  }
-
-  .header__title {
-    font-size: 14px;
-    line-height: 34px;
-  }
-
-  .app__header {
-    margin-bottom: -50px;
-  }
-  .app__footer {
-    margin-top: 20px;
+    margin-bottom: -60px;
   }
 }

@@ -14,7 +14,7 @@ function Quiz() {
 					<h1 className="quiz__question"> {questions[questionNumber]?.title} is the capital of</h1>			
 					<div className="quiz__answerOptions">
 						{
-						questions[questionNumber] && questions[questionNumber]?.answers.map((answer, i) => (
+							questions[questionNumber] && questions[questionNumber]?.answers.map((answer, i) => (
 								<AnswerOption key={i} answer={answer}
 									correctAnswer={questions[questionNumber].correctAnswer}							
 								/>
